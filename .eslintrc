@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "next",
+    "prettier"
+  ],
+  "plugins": [
+    "eslint-plugin-import"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "@next/next/no-img-element": 0,
+    "import/no-unresolved": 2,
+    "import/export": 2,
+    "jsx-a11y/alt-text": 2,
+    "no-undef": 2,
+    "no-unused-vars": 2,
+    "no-console": 2,
+    "react/no-unused-prop-types": [
+      2,
+      {
+        "skipShapeProps": true
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "src/"
+        ]
+      }
+    }
+  }
+}

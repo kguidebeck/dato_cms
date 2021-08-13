@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@gulls/stylelint-config/styled-components"
+  ],
+  "rules": {
+    "number-leading-zero": null,
+    "string-quotes": "single"
+  }
+}
